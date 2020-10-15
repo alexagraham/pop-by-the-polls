@@ -5,13 +5,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pop by the Polls</title>
     <!-- link to style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
     <!-- link to script.js - make sure to defer -->
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <!-- nav element goes here -->
-
+    <nav>
+      <a href="./index.html"
+        ><img id="logo" src="./images/logo.jpg" alt="logo"
+      /></a>
+      <img id="hamburger" src="./icons/menu.svg" alt="Menu" />
+      <div id="overlay"></div>
+      <ul id="menu">
+        <li><a href="#issues">Issues</a></li>
+        <li><a href="#candidate">Candidate</a></li>
+        <li><a href="#polling-place">Polling Place</a></li>
+        <li><a href="#sample-ballot">Sample Ballot</a></li>
+      </ul>
+    </nav>
     <!-- main element goes here -->
+    <main>
+      <article>
+        <header class="grid-1-2">
+          <section>
+            <h1>Pop by the Polls</h1>
+            <p>
+              This is a short research article for the 2020 primaries. It covers
+              four issues currently being discussed, a candidate running for
+              President of the United States, a polling place, and a sample
+              ballot.
+            </p>
+            <a href="#" title="Read About the Issues">Read More</a>
+          </section>
+          <figure>
+            <img src="./images/north-carolina.svg" alt="North Carolina" />
+          </figure>
+        </header>
+        <!-- issues section -->
+        <section id="issues">
+          <header>
+            <h2>Issues</h2>
+            <p>
+              These are the issues that voters and candidates are discussing
+              this primary season.
+            </p>
+          </header>
+          <section class="grid-1-4">
+            <!--First issue-->
+            <article class="card">
+              <figure>
+                <img src="./images/obamacare.jpg" alt="Obamacare" />
+              </figure>
+              <section>
+                <h3>Obamacare</h3>
+                <p>
+                  Obamacare was the healthcare developed under the Obama and
+                  Biden administration. President Trump wishes to repeal it.
+                </p>
+              </section>
+            </article>
+            <!--second issue-->
+            <article class="card">
+              <figure><img src="./images/taxes.jpg" alt="Taxes" /></figure>
+              <section>
+                <h3>Taxes</h3>
+                <p>
+                  President Trump wishes to lower taxes on big businesses. On
+                  the contrary Vice President Biden wishes to raise taxes on
+                  anyone making over $400,000.
+                </p>
+              </section>
+            </article>
+            <!--third issue-->
+            <article class="card">
+              <figure>
+                <img src="./images/immigration.jpg" alt="Immigration" />
+              </figure>
+              <section>
+                <h3>Immigration</h3>
+                <p>
+                  President Trump wishes to build a border wall while Vice
+                  President Biden wishes to allow easier access to America, and
+                  even more rights for undocumented immigrants.
+                </p>
+              </section>
+            </article>
+            <!--fourth issue-->
+            <article class="card">
+              <figure>
+                <img src="./images/Court-Packing-.jpg" alt="Court Packing" />
+              </figure>
+              <section>
+                <h3>Court Packing</h3>
+                <p>
+                  The issue of whether Vice President Biden will pack the court
+                  if he is elected has arised. This means adding more justices
+                  to the Supreme Court.
+                </p>
+              </section>
+            </article>
+          </section>
+        </section>
+        <!--Candidates section-->
+        <section id="candidate">
+          <header>
+            <h2>Candidate</h2>
+            <p>
+              This is a person that is running to be nominated as a general
+              election candidate for President of the United States.
+            </p>
+          </header>
+          <section>
+            <article class="card grid-1-2">
+              <figure>
+                <img src="./images/joe biden.jpg" alt="Joe Biden" />
+              </figure>
+              <section>
+                <h3>Joe Biden</h3>
+                <p>
+                  Vice President Biden is the Democratic nominee in the 2020
+                  election for President of the United States. He served as the
+                  Vice President for President Obama, and was a senator for many
+                  years before that.
+                </p>
+              </section>
+            </article>
+          </section>
+        </section>
+        <!--Polling place section-->
+        <section id="polling-place">
+          <header>
+            <h2>Polling Place</h2>
+            <p>
+              This is a location that voters can visit to cast a ballot for
+              candidates they prefer.
+            </p>
+          </header>
+          <section>
+            <article class="card grid-1-2">
+              <figure>
+                <img
+                  src="./images/Screen Shot 2020-10-15 at 2.27.52 PM.png"
+                  alt="Chapel Hill Bible Church"
+                />
+              </figure>
+              <section>
+                <h3>Chapel Hill Bible Church</h3>
+                <p>
+                  Chapel Hill Bible Church is one of the polling sites in Chapel
+                  Hill. It is open from 6:30 A.M. to 7:30 P.M. on election day.
+                  It is located at 260 Erwin Road, Chapel Hill NC.
+                </p>
+              </section>
+            </article>
+          </section>
+        </section>
+        <!-- Sample ballot section -->
+        <section id="sample-ballot">
+          <header>
+            <h2>Sample Ballot</h2>
+            <p>
+              This is a document that potential voters can use to practice
+              voting and to preview which voters are up for election.
+            </p>
+          </header>
+          <section>
+            <article class="card grid-1-2">
+              <figure>
+                <img src="./images/sample ballot.jpg" alt="Sample Ballot" />
+              </figure>
+              <section>
+                <h3>2020 Sample Ballott</h3>
+                <p>
+                  This is an example of the 2020 general election ballot. You
+                  can President Trump, Vice President Biden, and others in the
+                  first column.
+                </p>
+              </section>
+            </article>
+          </section>
+        </section>
+      </article>
+    </main>
 
     <!-- footer element goes here -->
+    <footer>
+      <p>
+        This website was made by
+        <a href="/">Alexa Graham</a>
+        in
+        <a href="https://mejo187.com">Foundations of Interactive Media</a>
+        at
+        <a href="https://unc.edu"
+          >The University of North Carolina at Chapel Hill.</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
